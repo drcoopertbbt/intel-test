@@ -1,0 +1,23 @@
+# Exclude specific files or folders
+exclude:
+  - node_modules/
+  - dist/
+  - .git/
+  - .env
+  - *.log
+
+# Include specific files for memory
+include:
+  - src/**
+  - public/index.html
+  - README.md
+
+# Set size or file type restrictions (optional)
+limit:
+  maxFileSize: 1MB  # Exclude files larger than 1MB
+  fileTypes:
+    - ".js"
+    - ".jsx"
+    - ".ts"
+    - ".tsx"
+    - ".md"
