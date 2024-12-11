@@ -1,0 +1,12 @@
+/* src/chatbot/chatbot.css */
+
+/* Example: Adjust the chatbot width */
+.react-chatbot-kit-chat-container {
+    max-width: 400px;
+  }
+  
+  /* Example: Customize the chat button */
+  .rcw-conversation-container {
+    background-color: #14b8a6;
+  }
+  
