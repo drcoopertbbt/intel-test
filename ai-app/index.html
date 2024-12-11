@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Ericsson AI SecOps Tool</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
@@ -29,14 +32,23 @@
 
         <div class="flex items-center">
           <div class="relative hidden lg:flex w-[500px]">
-            <input type="text" placeholder="Search metrics..." 
-              class="w-full py-2 pl-10 pr-4 bg-gray-700 border border-gray-600 rounded-md text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500"/>
-            <i class="bx bx-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            <input
+              type="text"
+              placeholder="Search metrics..."
+              class="w-full py-2 pl-10 pr-4 bg-gray-700 border border-gray-600 rounded-md text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+            <i
+              class="bx bx-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+            ></i>
           </div>
         </div>
         <div class="flex items-center gap-2">
           <span class="text-gray-300 font-medium">Admin</span>
-          <img src="../src/admin.png" alt="Admin Avatar" class="w-10 h-10 rounded-full border border-gray-600"/>
+          <img
+            src="../src/admin.png"
+            alt="Admin Avatar"
+            class="w-10 h-10 rounded-full border border-gray-600"
+          />
         </div>
       </header>
 
@@ -44,23 +56,38 @@
         <aside class="w-64 hidden lg:block">
           <div class="bg-gray-800 rounded-lg p-4 sticky top-4">
             <nav class="space-y-2">
-              <a href="#" class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700">
+              <a
+                href="#"
+                class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
+              >
                 <i class="bx bx-home-alt text-teal-400"></i>
                 <span>Overview</span>
               </a>
-              <a href="#" class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700">
+              <a
+                href="#"
+                class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
+              >
                 <i class="bx bx-bar-chart text-teal-400"></i>
                 <span>Traffic Analytics</span>
               </a>
-              <a href="#" class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700">
+              <a
+                href="#"
+                class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
+              >
                 <i class="bx bx-network-chart text-teal-400"></i>
                 <span>Connections</span>
               </a>
-              <a href="#" class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700">
+              <a
+                href="#"
+                class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
+              >
                 <i class="bx bx-wifi text-teal-400"></i>
                 <span>WiFi Metrics</span>
               </a>
-              <a href="#" class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700">
+              <a
+                href="#"
+                class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
+              >
                 <i class="bx bx-cog text-teal-400"></i>
                 <span>Settings</span>
               </a>
@@ -70,6 +97,7 @@
 
         <div class="flex-1 flex gap-4">
           <div class="flex-1 flex flex-col gap-4">
+            <!-- Existing Charts Section -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="flex items-center gap-3 mb-4">
@@ -111,6 +139,108 @@
                 </div>
               </div>
             </div>
+
+            <!-- New Section: Displaying the 7 Data Types -->
+            <div class="mt-6">
+              <h2 class="text-2xl font-semibold mb-4">Detected Security Events</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <!-- 1. Authentication Log Anomalies -->
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <h3 class="text-lg font-semibold mb-2">Authentication Log Anomalies</h3>
+                  <pre class="text-sm whitespace-pre-wrap">
+[2024-11-14 10:13:05] gNodeB Auth: Failed Authentication
+  Source IP: 192.168.30.5
+  Device ID: Device-1928
+  Method: Public Key Mismatch
+  Retry Count: 3
+
+Alert: Unusual frequency of authentication failures detected
+                  </pre>
+                </div>
+
+                <!-- 2. Session Hijacking Attempt -->
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <h3 class="text-lg font-semibold mb-2">Session Hijacking Attempt</h3>
+                  <pre class="text-sm whitespace-pre-wrap">
+{
+  "timestamp": "2024-11-14T10:14:32Z",
+  "event": "Session Hijacking Detected",
+  "source_ip": "192.168.30.7",
+  "target_device_id": "Device-1930",
+  "status": "Unauthorized Session Token Reuse",
+  "alert_level": "high"
+}
+                  </pre>
+                </div>
+
+                <!-- 3. Traffic Pattern Anomalies -->
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <h3 class="text-lg font-semibold mb-2">Traffic Pattern Anomalies</h3>
+                  <pre class="text-sm whitespace-pre-wrap">
+[2024-11-14 10:10:00] Traffic Spike Detected
+  Node: gNodeB-Control (192.168.30.1)
+  Traffic Volume: 1050 requests/min
+  Protocol: TLS (weak cipher)
+  Alert: Unusual traffic and protocol usage patterns identified
+                  </pre>
+                </div>
+
+                <!-- 4. Firmware Version Check and Vulnerability Confirmation -->
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <h3 class="text-lg font-semibold mb-2">Firmware Vulnerability Check</h3>
+                  <pre class="text-sm whitespace-pre-wrap">
+{
+  "device_id": "gNodeB-Device-1928",
+  "firmware_version": "v2.1.3",
+  "cve_vulnerabilities": [
+    {
+      "cve_id": "CVE-2024-12345",
+      "status": "Confirmed",
+      "recommendation": "Update firmware to v2.1.4"
+    }
+  ]
+}
+                  </pre>
+                </div>
+
+                <!-- 5. Packet Inspection - Abnormal Protocol and Data Analysis -->
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <h3 class="text-lg font-semibold mb-2">Packet Inspection Anomalies</h3>
+                  <pre class="text-sm whitespace-pre-wrap">
+Timestamp: 2024-11-14 10:16:50
+Source IP: 192.168.30.5
+Protocol: Custom TLS (deprecated ciphers)
+Payload: Encrypted Command Detected
+Alert: Suspicious packet content observed
+                  </pre>
+                </div>
+
+                <!-- 6. Unusual Device Communication Patterns -->
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <h3 class="text-lg font-semibold mb-2">Unusual Device Communication Patterns</h3>
+                  <pre class="text-sm whitespace-pre-wrap">
+{
+  "device_id": "Device-1945",
+  "alert": "Abnormal spike in connection attempts detected",
+  "recommendation": "Monitor for potential compromise"
+}
+                  </pre>
+                </div>
+
+                <!-- 7. Real-Time AI-Driven Alert Validation -->
+                <div class="bg-gray-800 rounded-lg p-4 md:col-span-2 lg:col-span-2">
+                  <h3 class="text-lg font-semibold mb-2">Real-Time AI-Driven Alert Validation</h3>
+                  <pre class="text-sm whitespace-pre-wrap">
+[2024-11-14 10:20:12] AI Validation: CVE-2024-12345
+Device: gNodeB-Device-1928
+Confirmation: 98%
+Alerts Confirmed: Auth failures, Traffic anomalies, Session hijack
+Action: Isolate node, update firmware, initiate protocol reset
+Alert Level: CRITICAL
+                  </pre>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="w-80 flex flex-col gap-4">
@@ -131,8 +261,6 @@
                 </div>
               </div>
             </div>
-
-
 
             <div class="bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg p-4">
               <h3 class="text-lg font-semibold mb-3">Disk Usage</h3>
@@ -158,82 +286,100 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-      const randomData = (count) => Array.from({ length: count }, () => Math.floor(Math.random() * 100));
-      
-      new Chart(document.getElementById('packetDropChart'), {
-        type: 'line',
+      const randomData = (count) =>
+        Array.from({ length: count }, () => Math.floor(Math.random() * 100));
+
+      new Chart(document.getElementById("packetDropChart"), {
+        type: "line",
         data: {
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-          datasets: [{
-            label: 'Packet Drop Rate',
-            data: randomData(6),
-            borderColor: 'rgb(20, 184, 166)',
-            tension: 0.3
-          }]
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          datasets: [
+            {
+              label: "Packet Drop Rate",
+              data: randomData(6),
+              borderColor: "rgb(20, 184, 166)",
+              tension: 0.3,
+            },
+          ],
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
             legend: {
-              display: false
-            }
-          }
-        }
+              display: false,
+            },
+          },
+        },
       });
 
-      new Chart(document.getElementById('bandwidthUtilChart'), {
-        type: 'bar',
+      new Chart(document.getElementById("bandwidthUtilChart"), {
+        type: "bar",
         data: {
-          labels: ['Port 1', 'Port 2', 'Port 3', 'Port 4'],
-          datasets: [{
-            label: 'Bandwidth',
-            data: randomData(4),
-            backgroundColor: ['rgb(20, 184, 166)', 'rgb(59, 130, 246)', 'rgb(34, 197, 94)', 'rgb(168, 85, 247)']
-          }]
+          labels: ["Port 1", "Port 2", "Port 3", "Port 4"],
+          datasets: [
+            {
+              label: "Bandwidth",
+              data: randomData(4),
+              backgroundColor: [
+                "rgb(20, 184, 166)",
+                "rgb(59, 130, 246)",
+                "rgb(34, 197, 94)",
+                "rgb(168, 85, 247)",
+              ],
+            },
+          ],
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
             legend: {
-              display: false
-            }
-          }
-        }
+              display: false,
+            },
+          },
+        },
       });
 
-      new Chart(document.getElementById('protocolDistChart'), {
-        type: 'pie',
+      new Chart(document.getElementById("protocolDistChart"), {
+        type: "pie",
         data: {
-          labels: ['TCP', 'UDP', 'ICMP'],
-          datasets: [{
-            data: randomData(3),
-            backgroundColor: ['rgb(20, 184, 166)', 'rgb(59, 130, 246)', 'rgb(168, 85, 247)']
-          }]
+          labels: ["TCP", "UDP", "ICMP"],
+          datasets: [
+            {
+              data: randomData(3),
+              backgroundColor: [
+                "rgb(20, 184, 166)",
+                "rgb(59, 130, 246)",
+                "rgb(168, 85, 247)",
+              ],
+            },
+          ],
         },
         options: {
           responsive: true,
-          maintainAspectRatio: false
-        }
+          maintainAspectRatio: false,
+        },
       });
 
-      new Chart(document.getElementById('signalQualityChart'), {
-        type: 'radar',
+      new Chart(document.getElementById("signalQualityChart"), {
+        type: "radar",
         data: {
-          labels: ['Signal 1', 'Signal 2', 'Signal 3', 'Signal 4'],
-          datasets: [{
-            label: 'Signal Quality',
-            data: randomData(4),
-            backgroundColor: 'rgba(20, 184, 166, 0.2)',
-            borderColor: 'rgb(20, 184, 166)',
-            pointBackgroundColor: 'rgb(20, 184, 166)'
-          }]
+          labels: ["Signal 1", "Signal 2", "Signal 3", "Signal 4"],
+          datasets: [
+            {
+              label: "Signal Quality",
+              data: randomData(4),
+              backgroundColor: "rgba(20, 184, 166, 0.2)",
+              borderColor: "rgb(20, 184, 166)",
+              pointBackgroundColor: "rgb(20, 184, 166)",
+            },
+          ],
         },
         options: {
           responsive: true,
-          maintainAspectRatio: false
-        }
+          maintainAspectRatio: false,
+        },
       });
     </script>
   </body>
