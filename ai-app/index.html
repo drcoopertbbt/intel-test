@@ -26,7 +26,7 @@
           </button>
           <div class="flex items-center gap-2 text-teal-400">
             <i class="bx bx-router text-3xl"></i>
-            <span class="text-xl font-semibold">Telco AI SecOps Tool</span>
+            <span class="text-xl font-semibold">5G NIST Vulnerability AI-Enabled SecOps Tool</span>
           </div>
         </div>
 
@@ -68,28 +68,35 @@
                 class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
               >
                 <i class="bx bx-bar-chart text-teal-400"></i>
-                <span>Traffic Analytics</span>
+                <span>Device Log Retrieval</span>
               </a>
               <a
                 href="#"
                 class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
               >
                 <i class="bx bx-network-chart text-teal-400"></i>
-                <span>Connections</span>
+                <span>Packet Capture Setup</span>
               </a>
               <a
                 href="#"
                 class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
               >
                 <i class="bx bx-wifi text-teal-400"></i>
-                <span>WiFi Metrics</span>
+                <span>Network Traffic Analysis</span>
               </a>
+              <a
+              href="#"
+              class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
+            >
+              <i class="bx bx-wifi text-teal-400"></i>
+              <span>External Data Sources</span>
+            </a>
               <a
                 href="#"
                 class="flex items-center gap-3 p-3 text-gray-300 rounded-md hover:bg-gray-700"
               >
                 <i class="bx bx-cog text-teal-400"></i>
-                <span>Settings</span>
+                <span>AI Model Deployment</span>
               </a>
             </nav>
           </div>
@@ -102,7 +109,7 @@
               <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="flex items-center gap-3 mb-4">
                   <i class="bx bx-line-chart text-teal-400 text-2xl"></i>
-                  <h2 class="text-lg font-semibold">Packet Drop Rate</h2>
+                  <h2 class="text-lg font-semibold">Realtime Packet Capture</h2>
                 </div>
                 <div class="flex-1">
                   <canvas id="packetDropChart"></canvas>
@@ -112,7 +119,7 @@
               <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="flex items-center gap-3 mb-4">
                   <i class="bx bx-bar-chart-alt text-teal-400 text-2xl"></i>
-                  <h2 class="text-lg font-semibold">Bandwidth Utilization</h2>
+                  <h2 class="text-lg font-semibold">Vulnerability Scanning</h2>
                 </div>
                 <div class="flex-1">
                   <canvas id="bandwidthUtilChart"></canvas>
@@ -122,7 +129,7 @@
               <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="flex items-center gap-3 mb-4">
                   <i class="bx bx-pie-chart-alt text-teal-400 text-2xl"></i>
-                  <h2 class="text-lg font-semibold">Protocol Distribution</h2>
+                  <h2 class="text-lg font-semibold">Protocol Coverage</h2>
                 </div>
                 <div class="flex-1">
                   <canvas id="protocolDistChart"></canvas>
@@ -132,7 +139,7 @@
               <div class="bg-gray-800 rounded-lg p-4 flex flex-col">
                 <div class="flex items-center gap-3 mb-4">
                   <i class="bx bx-signal-5 text-teal-400 text-2xl"></i>
-                  <h2 class="text-lg font-semibold">Signal Quality</h2>
+                  <h2 class="text-lg font-semibold">Vulnerability Detection</h2>
                 </div>
                 <div class="flex-1">
                   <canvas id="signalQualityChart"></canvas>
@@ -363,24 +370,41 @@ Alert Level: CRITICAL
       });
 
       new Chart(document.getElementById("signalQualityChart"), {
-        type: "radar",
-        data: {
-          labels: ["Signal 1", "Signal 2", "Signal 3", "Signal 4"],
-          datasets: [
-            {
-              label: "Signal Quality",
-              data: randomData(4),
-              backgroundColor: "rgba(20, 184, 166, 0.2)",
-              borderColor: "rgb(20, 184, 166)",
-              pointBackgroundColor: "rgb(20, 184, 166)",
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-        },
-      });
+    type: "radar",
+    data: {
+        labels: ["threat-vector1", "threat-vector2", "threat-vector3", "threat-vector4"],
+        datasets: [{
+            label: "Threat Detection",
+            // Adjust these values to extend the shape in desired directions
+            data: [65, 45, 40, 55], // Modified values to create larger, asymmetric coverage
+            backgroundColor: "rgba(20, 184, 166, 0.4)",
+            borderColor: "rgb(20, 184, 166)",
+            pointBackgroundColor: "rgb(20, 184, 166)",
+            borderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 8,
+            fill: true
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            r: {
+                min: 0,
+                max: 100,
+                ticks: {
+                    stepSize: 20
+                },
+                pointLabels: {
+                    font: {
+                        size: 14
+                    }
+                }
+            }
+        }
+    }
+});
     </script>
   </body>
 </html>
