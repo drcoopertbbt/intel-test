@@ -2,7 +2,7 @@ import json
 import time
 
 def simulate_auth_logs():
-    with open("auth_log_anomalies.json", "r") as f:
+    with open("authentication-log-anomalies.json", "r") as f:
         data = json.load(f)
     for entry in data:
         print(entry)
