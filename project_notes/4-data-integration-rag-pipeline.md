@@ -9,3 +9,6 @@ For optimization, the model undergoes supervised fine-tuning within the ONNX fra
 An additional API service wraps the model, enabling secure interaction and facilitating the creation of an agentic workflow that connects a secondary agent operating in a public cloud environment. This cloud-based agent, managed by the same organization, provides access to more powerful computational and analytical tools. To secure communication between the local and cloud agents, a time-based security token system is implemented, ensuring robust security while maintaining operational alignment within the same domain. This architecture allows for scalable, secure collaboration between the agents, leveraging local and cloud-based resources for enhanced performance and flexibility.
 
 By uniting Materialize, HDF5, the fine-tuned Gemma 2B model, LLAMA Index, Arize AI’s Phoenix, and the Semantic Router, this architecture achieves a sophisticated balance of real-time processing, historical depth, advanced hybrid search, and robust security. The integration of the API service and agentic workflows ensures seamless scalability and adaptability, delivering an intelligent and context-aware system capable of meeting diverse data-driven demands with precision and reliability.
+
+
+![alt text](<Screenshot 2024-12-13 at 10.43.09 AM.png>)
