@@ -1,0 +1,18 @@
+[
+    {
+      "device_id": "Device-1945",
+      "connection_attempts": [
+        {
+          "timestamp": "2024-11-14T10:05:22Z",
+          "status": "Successful"
+        },
+        {
+          "timestamp": "2024-11-14T10:08:45Z",
+          "status": "Failed"
+        }
+      ],
+      "alert": "Abnormal spike in attempts",
+      "recommendation": "Monitor device"
+    }
+  ]
+  

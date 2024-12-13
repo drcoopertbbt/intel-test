@@ -1,0 +1,16 @@
+[
+    {
+      "timestamp": "2024-11-14T10:20:12Z",
+      "cve_id": "CVE-2024-12345",
+      "device": "gNodeB-Device-1928",
+      "confidence": 98,
+      "alerts_confirmed": [
+        "Auth failures",
+        "Traffic anomalies",
+        "Session hijack"
+      ],
+      "action": "Isolate node, update firmware",
+      "alert_level": "critical"
+    }
+  ]
+  

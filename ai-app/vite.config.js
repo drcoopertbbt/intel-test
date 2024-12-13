@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Added a comment here to indicate code change for enabling new data integration.
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '0.0.0.0', // Binds the development server to all available network interfaces
-    port: 5173, // Default port, change if necessary
+    host: '0.0.0.0',
+    port: 5173,
   },
 })

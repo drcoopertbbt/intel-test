@@ -2,3 +2,4 @@ ai-app/package-lock.json
 ai-app/dist
 ai-app/node_modules
 
+SPAN-port-simulator/venv/
