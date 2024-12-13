@@ -1,3 +1,4 @@
+```mermaid
 graph LR
     subgraph Data Ingestion
         SPAN[SPAN Port] --> Python1[Python + Protobuf]
@@ -51,3 +52,4 @@ graph LR
     style Kafka fill:#aaf,stroke:#333
     style GEMMA fill:#afa,stroke:#333
     style API fill:#faa,stroke:#333
+    ```
