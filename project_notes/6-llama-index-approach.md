@@ -57,7 +57,7 @@ UMAP is often used to reduce the dimensionality of high-dimensional embeddings, 
 4. **Integrate into the RAG Workflow:**
    - Use the UMAP-transformed embeddings for retrieval tasks.
 
-### Example Integration Code:
+### Integration Code:
 ```python
 from umap import UMAP
 from llama_index.vector_stores import QdrantVectorStore
