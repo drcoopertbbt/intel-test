@@ -3,7 +3,7 @@
       "device_id": "Device-1945",
       "connection_attempts": [
         {
-          "timestamp": "2024-11-14T10:05:22Z",
+          "timestamp": "2024-11-14T10:05:22Z", 
           "status": "Successful"
         },
         {
@@ -13,6 +13,99 @@
       ],
       "alert": "Abnormal spike in attempts",
       "recommendation": "Monitor device"
+    },
+    {
+      "device_id": "Device-1930",
+      "connection_attempts": [
+        {
+          "timestamp": "2024-11-14T10:10:00Z",
+          "status": "Failed"
+        },
+        {
+          "timestamp": "2024-11-14T10:10:15Z", 
+          "status": "Failed"
+        }
+      ],
+      "alert": "Multiple failed attempts",
+      "recommendation": "Check device credentials"
+    },
+    {
+      "device_id": "Device-1928",
+      "connection_attempts": [
+        {
+          "timestamp": "2024-11-14T10:12:00Z",
+          "status": "Successful"
+        },
+        {
+          "timestamp": "2024-11-14T10:15:30Z",
+          "status": "Successful"
+        }
+      ],
+      "alert": null,
+      "recommendation": "Normal activity"
+    },
+    {
+      "device_id": "Device-1940",
+      "connection_attempts": [
+        {
+          "timestamp": "2024-11-14T10:20:00Z",
+          "status": "Failed"
+        },
+        {
+          "timestamp": "2024-11-14T10:20:05Z",
+          "status": "Failed"
+        },
+        {
+          "timestamp": "2024-11-14T10:20:10Z",
+          "status": "Failed"
+        }
+      ],
+      "alert": "Rapid succession of failures",
+      "recommendation": "Investigate potential brute force attempt"
+    },
+    {
+      "device_id": "Device-1950",
+      "connection_attempts": [
+        {
+          "timestamp": "2024-11-14T10:25:00Z",
+          "status": "Successful"
+        }
+      ],
+      "alert": null,
+      "recommendation": "Normal activity"
+    },
+    {
+      "device_id": "Device-1929",
+      "connection_attempts": [
+        {
+          "timestamp": "2024-11-14T10:30:00Z",
+          "status": "Failed"
+        },
+        {
+          "timestamp": "2024-11-14T10:35:00Z",
+          "status": "Successful"
+        }
+      ],
+      "alert": "Recovered after failure",
+      "recommendation": "Monitor for pattern"
+    },
+    {
+      "device_id": "Device-1960",
+      "connection_attempts": [
+        {
+          "timestamp": "2024-11-14T10:40:00Z",
+          "status": "Failed"
+        },
+        {
+          "timestamp": "2024-11-14T10:40:30Z",
+          "status": "Failed"
+        },
+        {
+          "timestamp": "2024-11-14T10:41:00Z",
+          "status": "Failed"
+        }
+      ],
+      "alert": "Multiple failures from new device",
+      "recommendation": "Verify device authorization"
     }
-  ]
-  
+]

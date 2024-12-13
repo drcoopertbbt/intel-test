@@ -2,20 +2,136 @@
     {
       "timestamp": "2024-11-14T10:10:00Z",
       "node": "gNodeB-Control",
-      "ip": "192.168.30.1",
+      "ip": "192.168.30.1", 
       "traffic_volume": 1050,
       "protocol": "TLS",
       "encryption": "Weak",
       "alert": true
     },
     {
-      "timestamp": "2024-11-14T10:11:00Z",
+      "timestamp": "2024-11-14T10:11:00Z", 
       "node": "gNodeB-Control",
       "ip": "192.168.30.1",
       "traffic_volume": 1100,
       "protocol": "TLS",
       "encryption": "Weak",
       "alert": true
+    },
+    {
+      "timestamp": "2024-11-14T10:12:00Z",
+      "node": "gNodeB-Edge-1",
+      "ip": "192.168.30.15",
+      "traffic_volume": 890,
+      "protocol": "TLS",
+      "encryption": "Strong",
+      "alert": false
+    },
+    {
+      "timestamp": "2024-11-14T10:13:00Z",
+      "node": "gNodeB-Control",
+      "ip": "192.168.30.1",
+      "traffic_volume": 1250,
+      "protocol": "TLS", 
+      "encryption": "Weak",
+      "alert": true
+    },
+    {
+      "timestamp": "2024-11-14T10:14:00Z",
+      "node": "gNodeB-Edge-2",
+      "ip": "192.168.30.22",
+      "traffic_volume": 750,
+      "protocol": "SSH",
+      "encryption": "Strong",
+      "alert": false
+    },
+    {
+      "timestamp": "2024-11-14T10:15:00Z",
+      "node": "gNodeB-Control",
+      "ip": "192.168.30.1",
+      "traffic_volume": 1300,
+      "protocol": "TLS",
+      "encryption": "Weak", 
+      "alert": true
+    },
+    {
+      "timestamp": "2024-11-14T10:16:00Z",
+      "node": "gNodeB-Edge-3",
+      "ip": "192.168.30.35",
+      "traffic_volume": 920,
+      "protocol": "TLS",
+      "encryption": "Strong",
+      "alert": false
+    },
+    {
+      "timestamp": "2024-11-14T10:17:00Z",
+      "node": "gNodeB-Control",
+      "ip": "192.168.30.1",
+      "traffic_volume": 1450,
+      "protocol": "TLS",
+      "encryption": "Weak",
+      "alert": true
+    },
+    {
+      "timestamp": "2024-11-14T10:18:00Z",
+      "node": "gNodeB-Edge-1",
+      "ip": "192.168.30.15",
+      "traffic_volume": 850,
+      "protocol": "SSH",
+      "encryption": "Strong",
+      "alert": false
+    },
+    {
+      "timestamp": "2024-11-14T10:19:00Z",
+      "node": "gNodeB-Control",
+      "ip": "192.168.30.1",
+      "traffic_volume": 1500,
+      "protocol": "TLS",
+      "encryption": "Weak",
+      "alert": true
+    },
+    {
+      "timestamp": "2024-11-14T10:20:00Z",
+      "node": "gNodeB-Edge-4",
+      "ip": "192.168.30.42",
+      "traffic_volume": 680,
+      "protocol": "TLS",
+      "encryption": "Strong",
+      "alert": false
+    },
+    {
+      "timestamp": "2024-11-14T10:21:00Z",
+      "node": "gNodeB-Control",
+      "ip": "192.168.30.1",
+      "traffic_volume": 1550,
+      "protocol": "TLS",
+      "encryption": "Weak",
+      "alert": true
+    },
+    {
+      "timestamp": "2024-11-14T10:22:00Z",
+      "node": "gNodeB-Edge-2",
+      "ip": "192.168.30.22",
+      "traffic_volume": 790,
+      "protocol": "TLS",
+      "encryption": "Strong",
+      "alert": false
+    },
+    {
+      "timestamp": "2024-11-14T10:23:00Z",
+      "node": "gNodeB-Control",
+      "ip": "192.168.30.1",
+      "traffic_volume": 1600,
+      "protocol": "TLS",
+      "encryption": "Weak",
+      "alert": true
+    },
+    {
+      "timestamp": "2024-11-14T10:24:00Z",
+      "node": "gNodeB-Edge-5",
+      "ip": "192.168.30.55",
+      "traffic_volume": 950,
+      "protocol": "SSH",
+      "encryption": "Strong",
+      "alert": false
     }
-  ]
-  
+]

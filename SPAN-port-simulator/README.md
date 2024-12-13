@@ -16,18 +16,23 @@ Each simulator can be run independently using Python. Make sure your virtual env
 
 ```bash
 # Authentication Log Anomalies Simulator
+# verified working ✅
 python Authentication-Log-Anomalies.py
 
 # Firmware Vulnerability Check Simulator
+# verified working ✅
 python Firmware-Vulnerability-Check.py
 
 # Packet Inspection Anomalies Simulator
+# verified working ✅
 python Packet-Inspection-Anomalies.py
 
 # Real-Time AI-Driven Alert Validation
+# verified working ✅
 python Real-Time-AI-Driven-Alert-Validation.py
 
 # Session Hijacking Attempt Simulator
+# verified working ✅
 python Session-Hijacking-Attempt.py
 
 # Traffic Pattern Anomalies Simulator

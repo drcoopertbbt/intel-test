@@ -1,0 +1,16 @@
+[
+    {
+        "timestamp": "2024-03-20T10:00:00",
+        "type": "sudden_spike",
+        "packets_per_second": 10000,
+        "source_ip": "192.168.1.100",
+        "destination_ip": "192.168.1.200"
+    },
+    {
+        "timestamp": "2024-03-20T10:00:01",
+        "type": "port_scan",
+        "packets_per_second": 5000,
+        "source_ip": "192.168.1.101",
+        "destination_ip": "192.168.1.201"
+    }
+]

@@ -1,16 +1,161 @@
 [
     {
-      "timestamp": "2024-11-14T10:20:12Z",
+      "timestamp": "2024-11-14T10:20:12Z", 
       "cve_id": "CVE-2024-12345",
       "device": "gNodeB-Device-1928",
       "confidence": 98,
       "alerts_confirmed": [
         "Auth failures",
-        "Traffic anomalies",
+        "Traffic anomalies", 
         "Session hijack"
       ],
       "action": "Isolate node, update firmware",
       "alert_level": "critical"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:15Z",
+      "cve_id": "CVE-2024-12346", 
+      "device": "gNodeB-Device-1929",
+      "confidence": 95,
+      "alerts_confirmed": [
+        "Traffic anomalies",
+        "Firmware vulnerability"
+      ],
+      "action": "Monitor and patch",
+      "alert_level": "high"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:18Z",
+      "cve_id": "CVE-2024-12347",
+      "device": "gNodeB-Device-1930", 
+      "confidence": 92,
+      "alerts_confirmed": [
+        "Auth failures",
+        "Unusual device communication"
+      ],
+      "action": "Block traffic, investigate",
+      "alert_level": "high"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:21Z",
+      "cve_id": "CVE-2024-12348",
+      "device": "gNodeB-Device-1931",
+      "confidence": 89,
+      "alerts_confirmed": [
+        "Session hijack",
+        "Traffic anomalies"
+      ],
+      "action": "Reset session, monitor",
+      "alert_level": "medium"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:24Z",
+      "cve_id": "CVE-2024-12349",
+      "device": "gNodeB-Device-1932",
+      "confidence": 97,
+      "alerts_confirmed": [
+        "Auth failures",
+        "Firmware vulnerability",
+        "Traffic anomalies"
+      ],
+      "action": "Isolate node, patch firmware",
+      "alert_level": "critical"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:27Z",
+      "cve_id": "CVE-2024-12350",
+      "device": "gNodeB-Device-1933",
+      "confidence": 85,
+      "alerts_confirmed": [
+        "Traffic anomalies"
+      ],
+      "action": "Monitor traffic patterns",
+      "alert_level": "low"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:30Z",
+      "cve_id": "CVE-2024-12351",
+      "device": "gNodeB-Device-1934",
+      "confidence": 94,
+      "alerts_confirmed": [
+        "Session hijack",
+        "Auth failures"
+      ],
+      "action": "Reset credentials, monitor",
+      "alert_level": "high"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:33Z",
+      "cve_id": "CVE-2024-12352",
+      "device": "gNodeB-Device-1935",
+      "confidence": 91,
+      "alerts_confirmed": [
+        "Unusual device communication",
+        "Traffic anomalies"
+      ],
+      "action": "Investigate traffic patterns",
+      "alert_level": "medium"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:36Z",
+      "cve_id": "CVE-2024-12353",
+      "device": "gNodeB-Device-1936",
+      "confidence": 96,
+      "alerts_confirmed": [
+        "Auth failures",
+        "Session hijack",
+        "Firmware vulnerability"
+      ],
+      "action": "Isolate node, update firmware",
+      "alert_level": "critical"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:39Z",
+      "cve_id": "CVE-2024-12354",
+      "device": "gNodeB-Device-1937",
+      "confidence": 88,
+      "alerts_confirmed": [
+        "Traffic anomalies",
+        "Unusual device communication"
+      ],
+      "action": "Monitor and analyze",
+      "alert_level": "medium"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:42Z",
+      "cve_id": "CVE-2024-12355",
+      "device": "gNodeB-Device-1938",
+      "confidence": 93,
+      "alerts_confirmed": [
+        "Auth failures",
+        "Traffic anomalies"
+      ],
+      "action": "Reset credentials, monitor",
+      "alert_level": "high"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:45Z",
+      "cve_id": "CVE-2024-12356",
+      "device": "gNodeB-Device-1939",
+      "confidence": 87,
+      "alerts_confirmed": [
+        "Session hijack"
+      ],
+      "action": "Reset session",
+      "alert_level": "medium"
+    },
+    {
+      "timestamp": "2024-11-14T10:20:48Z",
+      "cve_id": "CVE-2024-12357",
+      "device": "gNodeB-Device-1940",
+      "confidence": 99,
+      "alerts_confirmed": [
+        "Auth failures",
+        "Traffic anomalies",
+        "Firmware vulnerability",
+        "Session hijack"
+      ],
+      "action": "Emergency shutdown, patch",
+      "alert_level": "critical"
     }
-  ]
-  
+]
