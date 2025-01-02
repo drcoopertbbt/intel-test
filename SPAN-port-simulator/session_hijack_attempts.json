@@ -21,7 +21,7 @@
       "timestamp": "2024-11-14T10:12:00Z",
       "node": "gNodeB-Edge-1",
       "ip": "192.168.30.15",
-      "traffic_volume": 890,
+      "traffic_volume": 890,student
       "protocol": "TLS",
       "encryption": "Strong",
       "alert": false
